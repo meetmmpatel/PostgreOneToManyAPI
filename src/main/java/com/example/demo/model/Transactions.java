@@ -33,7 +33,7 @@ public class Transactions extends DateModel {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	private Long transactions_id;
 	
 	@NotBlank
 	private float amount;
@@ -49,6 +49,54 @@ public class Transactions extends DateModel {
 	@OnDelete(action = OnDeleteAction.CASCADE)
 	@JsonIgnore
 	private Customer customer;
+
+
+	public Long getTransactions_id() {
+		return transactions_id;
+	}
+
+
+	public void setTransactions_id(Long transactions_id) {
+		this.transactions_id = transactions_id;
+	}
+
+
+	public float getAmount() {
+		return amount;
+	}
+
+
+	public void setAmount(float amount) {
+		this.amount = amount;
+	}
+
+
+	public Date getTrasaction_date() {
+		return trasaction_date;
+	}
+
+
+	public void setTrasaction_date(Date trasaction_date) {
+		this.trasaction_date = trasaction_date;
+	}
+
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Transactions [transactions_id=" + transactions_id + ", amount=" + amount + ", trasaction_date="
+				+ trasaction_date + ", customer=" + customer + "]";
+	}
+	
 	
 	
 

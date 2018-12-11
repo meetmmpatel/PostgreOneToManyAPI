@@ -20,7 +20,7 @@ public class Customer extends DateModel {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	private Long customer_id;
 	
 	@NotNull
 	@Size(max = 100)
@@ -30,6 +30,35 @@ public class Customer extends DateModel {
 	@NotNull
 	@Size(max = 250)
 	private String lastName;
+
+	public Long getCustomer_id() {
+		return customer_id;
+	}
+
+	public void setCustomer_id(Long customer_id) {
+		this.customer_id = customer_id;
+	}
+
+	public String getFristName() {
+		return fristName;
+	}
+
+	public void setFristName(String fristName) {
+		this.fristName = fristName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [customer_id=" + customer_id + ", fristName=" + fristName + ", lastName=" + lastName + "]";
+	}
 	
 	
 	
