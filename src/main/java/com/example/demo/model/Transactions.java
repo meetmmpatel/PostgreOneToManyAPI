@@ -75,7 +75,6 @@ public class Transactions extends DateModel {
 		return trasaction_date;
 	}
 
-
 	public void setTrasaction_date(Date trasaction_date) {
 		this.trasaction_date = trasaction_date;
 	}
@@ -84,12 +83,10 @@ public class Transactions extends DateModel {
 	public Customer getCustomer() {
 		return customer;
 	}
-
-
+	
 	public void setCustomer(Customer customer) {
 		this.customer = customer;
 	}
-
 
 	@Override
 	public String toString() {
@@ -97,7 +94,4 @@ public class Transactions extends DateModel {
 				+ trasaction_date + ", customer=" + customer + "]";
 	}
 	
-	
-	
-
 }
