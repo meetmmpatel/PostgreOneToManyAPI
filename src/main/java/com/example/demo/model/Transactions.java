@@ -35,7 +35,7 @@ public class Transactions extends DateModel {
     @GeneratedValue(strategy = GenerationType.AUTO)
 	private Long transactions_id;
 	
-	@NotBlank
+//	@NotBlank
 	private float amount;
 	
 	@Temporal(TemporalType.TIMESTAMP)

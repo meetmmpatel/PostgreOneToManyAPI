@@ -31,7 +31,6 @@ public class CustomerController {
 	@GetMapping("/customers/{id}")
 	public Optional<Customer> findOne(@PathVariable(value = "id") Long id) {
 		return customerService.getOne(id);
-
 	}
 
 	@PostMapping("/customers")
